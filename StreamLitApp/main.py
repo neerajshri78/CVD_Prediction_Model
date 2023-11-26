@@ -1,4 +1,4 @@
-from preprocessing import DataPreprocessor
+from StreamLitApp.preprocessing import DataPreprocessor
 import streamlit as st
 import pickle
 import pandas as pd
