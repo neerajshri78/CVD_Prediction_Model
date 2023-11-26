@@ -10,10 +10,10 @@ import pickle
 class DataPreprocessor:
     def __init__(self):
         self.le = preprocessing.LabelEncoder()
-        with open('female_clusters.pkl', 'rb') as file:
+        with open('../CVD_Modelling/Model_Analysis/Model_Pickle/female_clusters.pkl', 'rb') as file:
             self.kmodes_female = pickle.load(file)
 
-        with open('male_clusters.pkl', 'rb') as file:
+        with open('../CVD_Modelling/Model_Analysis/Model_Pickle/male_clusters.pkl', 'rb') as file:
             self.kmodes_male = pickle.load(file)
 
     def preprocess_data(self, data):
